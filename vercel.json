@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/src/**/*",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/dashboard",
+      "destination": "/dashboard",
+      "permanent": true
+    },
+    {
+      "source": "/login",
+      "destination": "/login",
+      "permanent": true
+    },
+    {
+      "source": "/signup",
+      "destination": "/signup",
+      "permanent": true
+    },
+    {
+      "source": "/signup",
+      "destination": "/signup",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/compare",
+      "destination": "/compare",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}
