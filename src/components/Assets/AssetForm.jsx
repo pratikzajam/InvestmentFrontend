@@ -103,7 +103,7 @@ export default function AssetForm({ onClose, initialAsset = null }) {
         onClose(); // Close the form after success
       } else {
         const response = await axios.post(
-          'http://localhost:3777/api/user/addasset',
+          'https://investment-backend.vercel.app/api/user/addasset',
           {
             assetName: assetData.name,
             symbol: assetData.symbol,
